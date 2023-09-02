@@ -26,7 +26,7 @@ const Projects = () => {
             {projects.map((item) => {
               return (
                 <div key={item.id} className="group relative flex flex-col items-start">
-                  <div className="relative z-10 flex h-[150px] w-full items-center justify-center bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 border border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                  <div className="relative z-10 flex h-[150px] w-full items-center justify-center shadow-md shadow-zinc-800/5 ring-zinc-900/5 border border-zinc-700/50 bg-zinc-800 ring-0">
                     <img
                       className="h-full w-full p-3"
                       src={item.projectImg === 'null' ? altImg : item.projectImg}
@@ -34,7 +34,7 @@ const Projects = () => {
                   </div>
                   <h2 className="mt-6 text-base font-semibold text-zinc-100">
 
-                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
 
                     <a href={item.link} target="_blank">
                       <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
@@ -42,10 +42,10 @@ const Projects = () => {
                       <span className="relative  z-10">{item.projectName}</span>
                     </a>
                   </h2>
-                  <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                  <p className="relative z-10 mt-2 text-sm text-zinc-400">
                     {item.projectDescription}
                   </p>
-                  <div className="relative z-10 mt-6 flex justify-between text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                  <div className="relative z-10 mt-6 flex justify-between text-sm font-medium transition group-hover:text-teal-500 text-zinc-200">
                     <BiLink className="h-6 w-6" />
                     <span className="ml-2">{item.linkOf}</span>
                   </div>
