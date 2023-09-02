@@ -41,7 +41,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => (
-  <main className="sm:mx-[5rem] lg:mx-[10rem] xl:mx-[20rem] 2xl:mx-[30rem] bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 flex flex-col min-h-screen">
+  <main className="sm:mx-[5rem] lg:mx-[10rem] xl:mx-[20rem] 2xl:mx-[30rem] ring-1 ring-zinc-100 bg-zinc-900 ring-zinc-300/20 flex flex-col min-h-screen">
     <div className="flex-grow">
       <section>
         <RouterProvider router={router} />

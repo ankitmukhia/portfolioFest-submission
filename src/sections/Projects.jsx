@@ -13,7 +13,7 @@ const Projects = () => {
         <div className="mx-auto px-4 max-w-2xl lg:max-w-5xl">
           <div>
             <div className="max-w-2xl">
-              <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
                 Things I’ve made during my learning.
               </h1>
               <p className="text-zinc-600 font-sans mt-10">
@@ -26,15 +26,15 @@ const Projects = () => {
             {projects.map((item) => {
               return (
                 <div key={item.id} className="group relative flex flex-col items-start">
-                  <div className="relative z-10 flex h-[150px] w-full items-center justify-center bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                  <div className="relative z-10 flex h-[150px] w-full items-center justify-center bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 border border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                     <img
                       className="h-full w-full p-3"
                       src={item.projectImg === 'null' ? altImg : item.projectImg}
                     />
                   </div>
-                  <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                  <h2 className="mt-6 text-base font-semibold text-zinc-100">
 
-                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
 
                     <a href={item.link} target="_blank">
                       <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>

@@ -1,6 +1,6 @@
 export const messageapi = async (data) => {
     try {
-        const response = await fetch('http://localhost:5000/message', {
+        const response = await fetch('https://email-store.onrender.com/message', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
