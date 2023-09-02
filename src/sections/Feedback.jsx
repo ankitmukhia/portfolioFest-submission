@@ -11,7 +11,7 @@ import { messageapi } from "./api";
 
 const Feedback = () => {
     const alert = useAlert();
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
     const onSubmit = async (data) => {
         const dataStatus = await messageapi(data);
@@ -19,7 +19,8 @@ const Feedback = () => {
             alert.success(dataStatus.success);
         } else {
             alert.error(dataStatus.error);
-        }
+        };
+        reset();
     };
 
     return (
