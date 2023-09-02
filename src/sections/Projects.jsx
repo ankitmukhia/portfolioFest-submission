@@ -28,7 +28,7 @@ const Projects = () => {
                 <div key={item.id} className="group relative flex flex-col items-start">
                   <div className="relative z-10 flex h-[150px] w-full items-center justify-center shadow-md shadow-zinc-800/5 ring-zinc-900/5 border border-zinc-700/50 bg-zinc-800 ring-0">
                     <img
-                      className="h-full w-full p-3"
+                      className="h-full w-full p-3 object-cover"
                       src={item.projectImg === 'null' ? altImg : item.projectImg}
                     />
                   </div>
