@@ -38,12 +38,12 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="flex inset-x-10 justify-center mt-20 ">
-                    <div className="flex space-x-10 fixed">
-                        <img src={img1} className="rounded-3xl max-w-xs rotate-3 " />
-                        <img src={img3} className="rounded-3xl max-w-xs -rotate-3 " />
-                        <img src={img2} className="rounded-3xl max-w-xs rotate-3" />
-                        <img src={img4} className="rounded-3xl max-w-xs -rotate-3" />
-                        <img src={img5} className="rounded-3xl max-w-xs rotate-3 " />
+                    <div className="flex space-x-10 fixed ">
+                        <img src={img1} className="rounded-3xl max-w-xs px-2.5 rotate-3 " />
+                        <img src={img3} className="rounded-3xl max-w-xs px-2.5 -rotate-3 " />
+                        <img src={img2} className="rounded-3xl max-w-xs px-2.5 rotate-3" />
+                        <img src={img4} className="rounded-3xl max-w-xs px-2.5 -rotate-3" />
+                        <img src={img5} className="rounded-3xl max-w-xs px-2.5 rotate-3 " />
                     </div>
                 </div>
             </div>

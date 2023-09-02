@@ -16,7 +16,7 @@ const About = () => {
                     <div className="lg:pl-20">
                         <div className="max-w-xs px-2.5 lg:max-w-none">
                             {/* I took this idea of blurry image from "tailwind css element" */}
-                            <img className=" bg-[#27272AE6] max-w-sm lg:max-w-sm transition-all -row-span-3 duration-300 rounded-lg blur-sm hover:blur-none cursor-pointer" src={logo} />
+                            <img className=" bg-[#27272AE6] rounded-2xl transition-all -row-span-3 duration-300 blur-sm hover:blur-none object-cover bg-zinc-800 cursor-pointer" src={logo} />
                         </div>
                     </div>
                     <div className="lg:order-first lg:row-span-2">

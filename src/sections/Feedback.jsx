@@ -24,7 +24,7 @@ const Feedback = () => {
     };
 
     return (
-        <div className="relative mt-20">
+        <div className="relative pb-10 mt-20">
             <div className="mx-auto px-4 max-w-2xl lg:max-w-5xl">
                 <form
                     onSubmit={handleSubmit(onSubmit)}

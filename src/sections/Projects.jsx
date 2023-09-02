@@ -22,7 +22,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 mt-16 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 mt-16 gap-x-12 gap-y-16 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((item) => {
               return (
                 <div key={item.id} className="group relative flex flex-col items-start">
