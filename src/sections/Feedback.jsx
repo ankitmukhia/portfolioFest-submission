@@ -16,9 +16,9 @@ const Feedback = () => {
     const onSubmit = async (data) => {
         const dataStatus = await messageapi(data);
         if (dataStatus) {
-            alert.success(dataStatus.success);
+            alert.success('Thank you. I have happily received it');
         } else {
-            alert.error(dataStatus.error);
+            alert.error('This is an error please try later!');
         };
         reset();
     };

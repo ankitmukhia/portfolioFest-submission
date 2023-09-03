@@ -7,9 +7,13 @@ export const messageapi = async (data) => {
             },
             body: JSON.stringify(data)
         });
-        const status = await response.json()
-        return status;
+        if (response.status === 200) {
+            return await response.json();
+        } else {
+            throw new Error(`Server Error`);
+        }
     } catch (error) {
-        console.log(error)
+        console.error(error);
+        throw error;
     }
 }
