@@ -10,6 +10,6 @@ export const messageapi = async (data) => {
         const status = await response.json()
         return status;
     } catch (error) {
-        throw error;
+        console.log(error)
     }
 }
